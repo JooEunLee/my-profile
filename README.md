@@ -41,7 +41,7 @@ npm run build
 
 - `index.html`: 이름, 자기소개, 관심 분야, 이메일 등 페이지 내용
 - `styles.css`: 색상, 글꼴, 배치와 모바일 스타일
-- `assets/profile.jpg`: 교체 가능한 예시 프로필 사진
+- `assets/profile.jpg`: 사용자 제공 사진을 사용하는 웹사이트용 프로필 사진
 - `server.js`: 홈페이지, CSS와 사진을 제공하는 Node.js HTTP 서버
 - `package.json`: `npm start` 실행 명령
 - `scripts/build.js`: Vercel에 배포할 정적 파일 생성
@@ -49,11 +49,11 @@ npm run build
 
 ## 내 정보로 바꾸기
 
-현재 이름은 **이주은**, 영문 이름은 **JooEun Lee**입니다. 자기소개, 관심 분야, 사진과 이메일은 예시입니다. 본인의 정보에 맞게 `index.html`의 본문, 페이지 제목과 설명, 메뉴의 접근성 문구, 푸터를 수정하세요.
+현재 이름은 **이주은**, 영문 이름은 **JooEun Lee**이며, 프로필 사진도 사용자 본인의 사진입니다. 자기소개, 관심 분야와 이메일은 예시입니다. 본인의 정보에 맞게 `index.html`의 본문, 페이지 제목과 설명, 메뉴의 접근성 문구, 푸터를 수정하세요.
 
 - 이메일 `hello@example.com`을 검색하여 표시 주소와 두 개의 `mailto:` 링크를 모두 변경하세요.
 - 사진은 `assets/profile.jpg`를 본인의 사진으로 교체하고 `<img>`의 `alt` 설명도 수정하세요.
 - 사진 비율이나 얼굴 위치는 `styles.css`의 `.portrait img`에서 조정할 수 있습니다.
 - 대표 색상은 `styles.css` 상단의 `:root`에서 변경할 수 있습니다.
 
-사진은 사용자 본인의 사진이 아닌 [Unsplash 예시 이미지](https://images.unsplash.com/photo-1534528741775-53994a69daeb)입니다.
+현재 프로필 사진은 사용자가 제공한 `assets/IMG_3038.JPG`를 바탕으로 만들었습니다. 원본 파일은 로컬에 보존하고 Git 업로드에서 제외했습니다. 웹사이트에는 촬영 메타데이터를 제거한 `assets/profile.jpg`를 사용하며, 사진의 픽셀 데이터와 색상 프로필은 유지했습니다.

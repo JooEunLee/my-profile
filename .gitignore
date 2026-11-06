@@ -31,3 +31,6 @@ credentials.json
 .Rhistory
 .RData
 .Ruserdata
+
+# 원본 사진은 보존하고, 메타데이터를 제거한 profile.jpg만 업로드
+assets/IMG_3038.JPG

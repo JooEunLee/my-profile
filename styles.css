@@ -53,8 +53,8 @@ h1 .name { font-weight: 760; }
 .portrait { position: relative; width: 100%; padding: 0 7px 0 13px; }
 .portrait::before { content: ""; position: absolute; inset: 15px -7px 35px 28px; border: 1px solid #d0d1c5; border-radius: 200px 200px 8px 8px; transform: rotate(5deg); z-index: -1; }
 .portrait-frame { position: relative; overflow: hidden; border-radius: 200px 200px 7px 7px; background: #d2d7c8; }
-.portrait img { width: 100%; height: 455px; object-fit: cover; object-position: center 38%; filter: saturate(.68); }
-.portrait-index { position: absolute; bottom: 18px; left: 21px; color: white; font-size: 8px; font-weight: 600; letter-spacing: 2px; text-shadow: 0 1px 6px #0008; }
+.portrait img { width: 100%; height: 455px; object-fit: cover; object-position: center 25%; }
+.portrait-index { position: absolute; bottom: 18px; left: 21px; color: #3f473b; font-size: 8px; font-weight: 600; letter-spacing: 2px; text-shadow: 0 1px 3px #fff8; }
 .portrait-caption { position: absolute; right: -17px; bottom: -18px; display: flex; align-items: center; gap: 13px; background: #efeee4; border: 1px solid #e1e1d6; padding: 18px 24px; transform: rotate(-5deg); }
 .sparkle { font-size: 42px; color: var(--accent); line-height: 1; }
 .portrait-caption > span:last-child { font-family: Georgia, serif; font-size: 20px; line-height: 1.2; }
