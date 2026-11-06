@@ -6,6 +6,8 @@ Thumbs.db
 
 # 설치된 패키지, 로그 및 임시 결과
 node_modules/
+dist/
+.vercel/
 *.log
 coverage/
 tmp/

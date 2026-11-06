@@ -16,6 +16,27 @@ npm start
 
 3000번 포트가 이미 사용 중이면 기존 서버를 종료한 뒤 다시 실행하세요. 서버 없이 `index.html`을 브라우저에서 직접 여는 방식도 사용할 수 있습니다.
 
+## Vercel 배포하기
+
+Vercel에서는 `vercel.json` 설정에 따라 HTML, CSS, 사진을 정적 파일로 배포합니다. `npm run build`가 홈페이지에 필요한 세 파일을 `dist/`에 복사하며, Vercel은 이 폴더를 제공합니다. 로컬 Node.js 서버는 기존과 같이 `npm start`로 실행합니다.
+
+GitHub의 `main` 브랜치에 변경 내용을 푸시하면 연결된 Vercel 프로젝트가 새로 배포됩니다. Vercel 프로젝트 설정을 확인할 때는 다음 값을 사용하세요.
+
+- **Root Directory**: 저장소 최상위 폴더 (`./`)
+- **Framework Preset**: Other
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+
+프레임워크, 빌드 명령, 출력 폴더는 `vercel.json`에도 지정되어 있습니다. Vercel의 Build Command에 `npm start`를 입력하지 마세요.
+
+배포 파일을 로컬에서 확인하려면 다음 명령을 실행하세요.
+
+```sh
+npm run build
+```
+
+생성된 `dist/`에는 `index.html`, `styles.css`, `assets/profile.jpg`만 포함됩니다. 이 폴더는 자동 생성되므로 Git에 업로드하지 않습니다. Vercel에서 직접 `dist/`를 다시 만듭니다.
+
 ## 파일
 
 - `index.html`: 이름, 자기소개, 관심 분야, 이메일 등 페이지 내용
@@ -23,6 +44,8 @@ npm start
 - `assets/profile.jpg`: 교체 가능한 예시 프로필 사진
 - `server.js`: 홈페이지, CSS와 사진을 제공하는 Node.js HTTP 서버
 - `package.json`: `npm start` 실행 명령
+- `scripts/build.js`: Vercel에 배포할 정적 파일 생성
+- `vercel.json`: Vercel 프레임워크, 빌드 명령과 출력 폴더 설정
 
 ## 내 정보로 바꾸기
 

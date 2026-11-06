@@ -5,6 +5,7 @@
   "description": "HTML, CSS와 Node.js 내장 HTTP 모듈로 만든 개인 프로필 웹사이트",
   "type": "commonjs",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node scripts/build.js"
   }
 }
