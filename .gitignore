@@ -1,0 +1,31 @@
+# 운영체제 및 편집기 파일
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 설치된 패키지, 로그 및 임시 결과
+node_modules/
+*.log
+coverage/
+tmp/
+
+# 로컬 환경 설정과 인증 정보
+.env
+.env.*
+.npmrc
+.netrc
+.aws/
+.ssh/
+.codex/
+.agents/
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# R 사용 기록과 로컬 작업 데이터
+.Rhistory
+.RData
+.Ruserdata
